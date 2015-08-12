@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>ziven guide</title>
+		<title>27导航</title>
+		<meta content="极简的上网入口，极简的搜索入口，网站导航本应如此" name="description">
+		<meta content="导航，极简，搜索，极简导航，极简搜索" name="keywords">
 		<base target="_blank" />
 		<style>
 			::-webkit-input-placeholder { color: #fff; }
@@ -17,8 +19,9 @@
 			.db { display: block; }
 			.auto { margin-left: auto; margin-right: auto; }
 			.trans { -webkit-transition: all 0.3s; transition: all 0.3s; }
-			.search_form { position: fixed; top: 40%; left: 0; width: 100%; }
-			.search_int, .ani_shadow { font-size: 1em; width: 100%; line-height: 1.8em; }
+			.search_form{ position: fixed; top: 40%; left: 0; width: 100%; }
+			.search_form{ z-index: 1; }
+			.search_int, .ani_shadow{ font-size: 1em; width: 100%; line-height: 1.8em; }
 			.search_int { position: relative; letter-spacing: 1px; z-index: 1; padding: 0; border: none 0; color: #fff; text-align: center; background-color: rgba(0, 0, 0, 0.4); }
 			.ani_shadow { position: absolute; top: 0; left: 0; height: 0; background-color: rgba(0, 0, 0, 0.4); border-radius: 100%; margin-top: 0.9em; }
 			.search_int:focus { outline: none; }
@@ -36,12 +39,12 @@
 			})();
 		</script>
 	</head>
-	<body>
-		<div id="bg" class="bg"></div>
+	<body>		
 		<form class="search_form" action="http://www.baidu.com/s" target="_blank">
 			<input class="db auto search_int trans" type="text" autocomplete="off" maxlength="100" title="百度 搜索" name="wd" placeholder="搜一下" >
 			<i class="ani_shadow trans"></i>
 			<button class="search_sub trans" type="submit">百度一下</button>
 		</form>
+		<div id="bg" class="bg"></div>
 	</body>
 </html>
