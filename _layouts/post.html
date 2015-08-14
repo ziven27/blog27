@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %} 
+    <style>
+		body { padding: 0 10%; font-family: "Microsoft YaHei"; }
+		pre, .pre { border: 1px dashed #ddd; background-color: #f1f1f1; padding: 5px; }
+		a{ color: #08C; text-decoration: none; }
+		a:hover{ text-decoration: underline; }
+    </style>
+    {% include analysis.html %}   
+  </head>
+  <body class='p_post'>
+  	<div class="post_hd">
+  		<h2>{{ page.title }}</h2>
+  		<p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}</p>
+  	</div>
+    {{ content }}
+  </body>
+</html>

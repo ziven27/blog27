@@ -1,0 +1,114 @@
+@charset "utf-8";
+///* 
+//属性类
+//27组件的最基本的类，以后所有的组件都是基于这个类
+//
+//命名规范
+//此命名规则适用于不暴露到css中的属性集合
+//#pa(){ position:absolute; } #pl(@pl){ padding-left:@pl; } // 属性名，值名取首字母并去掉短横线
+//#tL(@t,@l){ top:@t; left:@l;}    			// 属性和属性之间之间用驼峰的方式隔开（除开方位类型的属性，其它按照A~Z的顺序排列）
+//#tL(@v){top:@v; left:@v; }            		// 当两个参数值相同时，只需传递一个参数
+//#plR(@pl, @pr){ #pl(@pl); #pr(@pr); } 		// 当遇到两属性前缀一样则可以连写 
+//#paTl(@t,@l){ #pa; top:@t; left:@l;}  //	进一步的缩写
+//
+//总结: 去掉短横线，冒号变短横线，空格变驼峰，相同前缀合并
+//*/
+
+//单属性带参
+#bc(@bc){ background-color:@bc; }
+#bl(@bl){ border-left:@bl; }
+#ff(@ff){ font-family:@ff;}
+#fs(@fs){ font-size:@fs;}
+#h(@h){ height:@h; }
+#lh(@lh){ line-height:@lh;}
+#mb(@mb){ margin-bottom:@mb;}
+#ml(@ml){ margin-left:@ml;}
+#mr(@mr){ margin-right:@mr;}
+#mt(@mt){ margin-top:@mt;}
+#pb(@pb){ padding-bottom:@pb;}
+#pl(@pl){ padding-left:@pl;}
+#pr(@pr){ padding-right:@pr;}
+#pt(@pt){ padding-top:@pt;}
+#w(@w){ width:@w; }
+#bi(@url){ background-image: url(@url); }
+#bg-no(@url){ background: url(@url) no-repeat; }
+#bg-x(@url){ background: url(@url) repeat-x; }	
+#bg-y(@url){ background: url(@url) repeat-y; }
+#bp(@x,@y){ background-position:-@x -@y;}
+#bp-tL(@lr,@tb){ background-position:@lr @tb; }
+#p-a(){ position:absolute; }
+#p-r(){ position:relative; }
+
+//多属性带参
+#hW(@h,@w){ height:@h; width:@w;}
+#wH(@w,@h){ height:@h; width:@w;}
+#wHlh(@w,@h){ height:@h; width:@w; line-height:@h; }
+#wHlh(@w,@h,@lh){ height:@h; width:@w; line-height:@lh; }
+#hLh(@h,@lh){ height:@h; #lh(@lh); }
+#hW(@v){ #hW(@v,@v); }
+#wH(@v){ #wH(@v,@v); }
+#hLh(@v) { #hLh(@v,@v); }
+#tL(@t, @l){ top:@t; left:@l; }
+#tR(@t, @r){ top:@t; right:@r;}
+#bL(@b, @l){ bottom:@b; left:@l; }
+#bR(@b, @r){ right:@r; bottom:@b; }
+#rB(@r, @b){ right:@r; bottom:@b; }
+#tL(@v){ #tL(@v, @v); }
+#tR(@v){ #tR(@v, @v); }
+#bL(@v){ #bL(@v, @v); }
+#bR(@v){ #bR(@v, @v); }
+#mlR(@ml, @mr){ #ml(@ml); #mr(@mr); }
+#mtB(@mt, @mb){ #mt(@mt); #mb(@mb); }
+#mtL(@mt, @ml){ #mt(@mt); #ml(@ml); }
+#mtR(@mt, @mr){ #mt(@mt); #mr(@mr); }
+#mrB(@mr, @mb){ #mr(@mr); #mb(@mb); }
+#plR(@pl, @pr){ #pl(@pl); #pr(@pr); }
+#ptB(@pt, @pb){ #pt(@pt); #pb(@pb); }
+#ptL(@pt, @pl){ #pt(@pt); #pl(@pl); }
+#mlR(@v){ #mlR(@v, @v); }
+#mtB(@v){ #mtB(@v, @v); }
+#mrB(@v){ #mrB(@v, @v); }
+#mtL(@v){ #mtL(@v, @v); }
+#mtR(@v){ #mtR(@v, @v); }
+#plR(@v){ #plR(@v, @v); }
+#ptB(@v){ #ptB(@v, @v); }
+#ptL(@vl){ #ptL(@v, @v); }
+#p-aTl(@t, @l){ #p-a; #tL(@t, @l); }
+#p-aTr(@t, @r){ #p-a; #tR(@t, @r); }       
+#p-aBl(@b, @l){ #p-a; #bL(@b, @l); }
+#p-aBr(@b, @r){ #p-a; #bR(@b, @r); }
+#p-fTl(@t, @l){ #p-f; #tL(@t, @l); }
+#p-fTr(@t, @r){ #p-f; #tR(@t, @r); }
+#p-fBl(@b, @l){ #p-f; #bL(@b, @l); }
+#p-fBr(@b, @r){ #p-f; #bR(@b, @r); }
+#p-rBl(@b, @l){ #p-r; #bL(@b, @l); }
+#p-rBr(@b, @r){ #p-r; #bR(@b, @r); }
+#p-rTl(@t, @l){ #p-r; #tL(@t, @l); }
+#p-rTr(@t, @r){ #p-r; #tR(@t, @r); }
+#p-aRb(@r, @b){ #p-a; #rB(@r, @b); }
+#p-aTl(@v){ #p-aTl(@v, @v); }
+#p-aTr(@v){ #p-aTr(@v, @v); }   
+#p-aBl(@v){ #p-aBl(@v, @v); }    
+#p-aBr(@v){ #p-aBr(@v, @v); }
+#p-fTl(@v){ #p-fTl(@v, @v); }
+#p-fTr(@v){ #p-fTr(@v, @v); }
+#p-fBl(@v){ #p-fBl(@v, @v); }
+#p-fBr(@v){ #p-fBr(@v, @v); }
+#p-rBl(@v){ #p-rBl(@v, @v); }
+#p-rBr(@v){ #p-rBr(@v, @v); }
+#p-rTl(@v){ #p-rTl(@v, @v); }
+#p-rTr(@v){ #p-rTr(@v, @v); }
+#p-aRb(@v){ #p-aRb(@v, @v); }
+#p-rL(@l){#p-r; left:@l; }
+#p-rT(@t){#p-r; top:@t; }
+#p-rB(@b){#p-r; bottom:@b; }
+#p-rR(@r){#p-r; right:@r; }
+
+//多属性带参数
+#hLhW(@h,@lh,@w){ height:@h; #lh(@lh); width:@w; }
+#hLhW(@h,@w){ height:@h; #lh(@h); width:@w; }
+#hLhW(@v){ #hLhW(@v,@v);  }
+
+#p-aTlHwMtMl(@t,@l,@h,@w,@mt,@ml){ #hW(@h,@w); #p-aTl(@t,@l); #mtL(@mt, @ml);	}
+#p-aTlWml(@t,@l,@w,@ml){ #p-aTl(@t,@l); width:@w; margin-left:@ml; }	
+
