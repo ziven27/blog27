@@ -3,17 +3,21 @@
   <head>
     {% include head.html %} 
     <style>
-		body { padding: 0 10%; font-family: "Microsoft YaHei"; }
-		pre, .pre { border: 1px dashed #ddd; background-color: #f1f1f1; padding: 5px; }
-		a{ color: #08C; text-decoration: none; }
-		a:hover{ text-decoration: underline; }
+		body { margin:20px 4%; }
+    a{ color: #08C; text-decoration: none; }
+    a:hover{ color: #066; }
+		.code { border: 1px dashed #ddd; background-color: #f1f1f1; padding: 5px; width: 100%; display: block; resize:vertical; overflow: auto; }
     </style>
+    {% if page.css %}
+      <style>
+      {{ page.css }}
+      </style>
+    {% endif %}
     {% include analysis.html %}   
   </head>
   <body class='p_post'>
   	<div class="post_hd">
-  		<h2>{{ page.title }}</h2>
-  		<p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}</p>
+  		<h1>{{ page.title }}</h1>
   	</div>
     {{ content }}
   </body>
