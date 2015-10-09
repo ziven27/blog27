@@ -1,4 +1,18 @@
 @charset "utf-8";
 @import "27less/_27.style.less";
 #oocss;
-html{font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,"Microsoft Yahei",sans-serif;}
+::-webkit-input-placeholder { color: #fff; }
+:-moz-placeholder { color: #fff; }
+::-moz-placeholder { color: #fff; }
+:-ms-input-placeholder { color: #fff; }
+html, input, button { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, "Microsoft Yahei", sans-serif; }
+
+/*index*/
+.index, .index body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+.index { color: #fff; text-align: center; font-size: 1.4em; background-color: #159957; background-image: linear-gradient(120deg, #155799, #159957);
+	h1 { font-size: 8em; margin: 0; color: rgba(255, 255, 255, 0.5); }
+	a { color: #fff; }
+	.bg img { height: 100%; width: 100%; display: block; }
+	.search_int { font-size: 1em; width: 100%; line-height: 1.8em; position: relative; letter-spacing: 1px; z-index: 1; padding: 0; border: none 0; color: #fff; text-align: center; background-color: rgba(0, 0, 0, 0.4); outline: none; }
+	.search_int:focus { background-color: #000; }
+}
