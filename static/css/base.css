@@ -661,6 +661,7 @@ button {
   font-size: 8em;
   margin: 0;
   color: rgba(255, 255, 255, 0.5);
+  animation: index-h1 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 .index a {
   color: #fff;
@@ -671,6 +672,7 @@ button {
   display: block;
 }
 .index .search_int {
+  animation: index-form 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   font-size: 1em;
   width: 100%;
   line-height: 1.8em;
@@ -686,4 +688,21 @@ button {
 }
 .index .search_int:focus {
   background-color: #000;
+}
+/*animation*/
+@keyframes index-h1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes index-form {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
