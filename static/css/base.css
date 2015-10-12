@@ -656,6 +656,9 @@
 :-ms-input-placeholder {
   color: #fff;
 }
+input {
+  -webkit-appearance: none;
+}
 html,
 input,
 button {
