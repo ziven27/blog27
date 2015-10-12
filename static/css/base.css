@@ -664,6 +664,12 @@ input,
 button {
   font-family: "Microsoft Yahei", "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, sans-serif;
 }
+ul.reset,
+ol.reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 /*module*/
 .m-wrap {
   width: 80%;
@@ -708,8 +714,12 @@ textarea.m-code {
 }
 .p-ind a {
   color: #fff;
+  text-decoration: none;
 }
-.p-ind .search_int {
+.search_form {
+  margin-bottom: 1em;
+}
+.search_form .search_int {
   animation: index-form 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   font-size: 1em;
   width: 100%;
@@ -724,11 +734,36 @@ textarea.m-code {
   background-color: rgba(0, 0, 0, 0.4);
   outline: none;
 }
-.p-ind .search_int:focus {
+.search_form .search_int:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.p-ind .search_int:hover {
+.search_form .search_int:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+.blog_list ol {
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: left;
+}
+.blog_list a {
+  border-top: 1px dashed rgba(0, 0, 0, 0.5);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+  margin: -1px 0;
+  padding: 0 10%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  line-height: 1.8em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.blog_list a:hover,
+.blog_list a:active {
+  text-indent: 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*page-artical*/
 .p-blo body {

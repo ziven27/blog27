@@ -10,8 +10,9 @@
 :-moz-placeholder { color: #fff; }
 ::-moz-placeholder { color: #fff; }
 :-ms-input-placeholder { color: #fff; }
-input{ -webkit-appearance: none; }
+input { -webkit-appearance: none; }
 html, input, button { font-family: "Microsoft Yahei", "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, sans-serif; }
+ul.reset, ol.reset { list-style: none; margin: 0; padding: 0; }
 
 /*module*/
 .m-wrap { width: 80%; margin: 0 auto; position: relative; }
@@ -25,11 +26,17 @@ textarea.m-code { width: 100%; resize: vertical; }
 	&, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
 	color: #fff; text-align: center; font-size: 1.4em; background-color: @bg;
 	h1 { font-size: 8em; margin: 0; color: rgba(255, 255, 255, 0.9); animation: index-h1 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28); text-shadow: 0 0 20px @bg; }
-	a { color: #fff; }
+	a { color: #fff; text-decoration: none; }
+}
+.search_form { margin-bottom: 1em;
 	.search_int { animation: index-form 1s cubic-bezier(0.18, 0.89, 0.32, 1.28); font-size: 1em; width: 100%; line-height: 1.8em; position: relative; letter-spacing: 1px; z-index: 1; padding: 0; border: none 0; color: #fff; text-align: center; background-color: rgba(0, 0, 0, 0.4); outline: none;
 		&:focus { background-color: rgba(0, 0, 0, 0.5); }
 		&:hover { background-color: rgba(0, 0, 0, 0.8); }
 	}
+}
+.blog_list { ol { background-color: rgba(0, 0, 0, 0.2); overflow: hidden; text-align: left; }
+	a { border-top: 1px dashed rgba(0, 0, 0, 0.5); border-bottom: 1px dashed rgba(0, 0, 0, 0.5); margin: -1px 0; padding: 0 10%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display: block; line-height: 1.8em; -webkit-transition:all 0.3s;transition:all 0.3s; }
+	a:hover, a:active { text-indent: 1em; border-top: 1px solid rgba(0, 0, 0, 0.5); border-bottom: 1px solid rgba(0, 0, 0, 0.5); background-color: rgba(0, 0, 0, 0.5); }
 }
 
 /*page-artical*/
