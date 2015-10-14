@@ -8,15 +8,22 @@
 		<meta name="description" content="极简的上网入口，极简的搜索入口，网站导航本应如此">
 		<base target="_blank" /> 
 		<link rel="stylesheet" href="static/css/base.css">
-		<script src="static/js/baidu.js"></script>
+		<script src="static/js/base.js"></script>
 	</head>
 	<body>
 		<h1>27</h1>
+		<div id="blogBox">
+			
+		</div>
+		<script src="static/js/blog-list.js"></script>
 		<script>
-		function winLoad() {
-			alert(window.location.hash);
-		}
-		window.onload = winLoad;
+			window.onload = function() {
+				var blogId = _27.getQueryString('blogId');
+				var url = getUrlByBlogId(blogId);
+				var html= _27.jsLoad(url,function(xmlhttp){
+					console.log(xmlhttp);
+				});
+			};
 		</script>
 	</body>
 </html>
