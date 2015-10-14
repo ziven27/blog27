@@ -9,9 +9,11 @@ _27.getQueryString = function(name) {
 	}
 	return false;
 };
+_27.$ = function(id) {
+	return document.getElementById(id);
+};
 //js 的ajax请求
-
-_27.jsLoad=function(url,afterLoad){
+_27.jsLoad = function(url, afterLoad) {
 	var xmlhttp;
 
 	function loadXMLDoc(url) {
