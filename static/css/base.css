@@ -717,7 +717,7 @@ textarea.m-code {
   text-decoration: none;
 }
 .search_form {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .search_form .search_int {
   animation: index-form 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
@@ -732,7 +732,7 @@ textarea.m-code {
   color: #fff;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
-  outline: none;
+  border-radius: 0;
 }
 .search_form .search_int:focus {
   background-color: rgba(0, 0, 0, 0.5);
