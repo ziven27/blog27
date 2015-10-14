@@ -12,6 +12,25 @@ _27.getQueryString = function(name) {
 _27.$ = function(id) {
 	return document.getElementById(id);
 };
+//iframe自适应
+_27.setIframeHeight = function(id) {
+	try {
+		var iframe = document.getElementById(id);
+		if (iframe.attachEvent) {
+			iframe.attachEvent("onload", function() {
+				iframe.height = iframe.contentWindow.document.documentElement.scrollHeight;
+			});
+			return;
+		} else {
+			iframe.onload = function() {
+				iframe.height = iframe.contentDocument.body.scrollHeight;
+			};
+			return;
+		}
+	} catch (e) {
+		throw new Error('setIframeHeight Error');
+	}
+}
 //js 的ajax请求
 _27.jsLoad = function(url, afterLoad) {
 	var xmlhttp;
