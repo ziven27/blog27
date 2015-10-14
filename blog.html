@@ -19,7 +19,7 @@
 			window.onload = function() {
 				var blogId = _27.getQueryString('blogId');
 				var url = getUrlByBlogId(blogId);
-				_27.setIframeHeight(url);
+				_27.setIframeHeight('blogBox');
 				var blogBox = _27.$('blogBox');
 				blogBox.src = url;
 			};
