@@ -656,7 +656,9 @@
 :-ms-input-placeholder {
   color: #fff;
 }
-body {
+body,
+input,
+button {
   margin: 0;
 }
 input {
