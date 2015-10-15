@@ -5,15 +5,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<base target="_blank" />
+		<title>css-reset</title>
 		<link rel="stylesheet" href="../static/css/base.css">
 	</head>
 	<body>
+		<iframe class="blog-hd" scrolling="no" src="../blog-header.html" frameborder="0"></iframe>
 		<h2>CSS Reset</h2>
 		<blockquote>CSS reset就像是一种宁可错杀三千不可放过一个的做法。</blockquote>
 		<p>一个最简单粗暴的css reset解决方案 <code class="m-code" style="height:1.5em;"> *{ margin:0; padding:0; }</code></p>		
 		<p>多余的话我就不再累赘，想要更多可以参考我的技术男神张鑫旭的文章<a href="http://www.zhangxinxu.com/wordpress/?p=758" title="CSS reset的重新审视 – 避免样式重置">CSS reset的重新审视 – 避免样式重置</a>。</p>
 		<p>下面是我总结的一些基础css reset 供大家参考。我觉得每个网站都应该有自己单独的一套css reset。</p>
-		<textarea class="m-code" style="height:44em;">ul, ol, fieldset{ margin: 0; padding: 0; }
+		<pre class="m-code">ul, ol, fieldset{ margin: 0; padding: 0; }
 th, td, legend{ padding:0; }
 body,h1, h2, h3, h4, h5, h6, p, dl,dd,form,textarea { margin:0; }
 
@@ -47,7 +49,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 caption, th { text-align: left; } 
 
 button, input, select { vertical-align: middle; }
-textarea{ vertical-align: top; }</textarea>
+textarea{ vertical-align: top; }</pre>
 	</body>
 </html>
 
