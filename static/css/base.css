@@ -766,12 +766,16 @@ textarea.m-code {
   background-color: rgba(0, 0, 0, 0.5);
 }
 /*page-artical*/
-.p-blo body {
+.p-blos h1 {
   margin-left: 10%;
   margin-right: 10%;
 }
-.p-blo .blog-box {
+.p-blos .blog-box {
   min-height: 500px;
   overflow-y: hidden;
   width: 100%;
+}
+.p-blo body {
+  margin-left: 10%;
+  margin-right: 10%;
 }
