@@ -44,6 +44,7 @@
 #wH(@w,@h){ height:@h; width:@w;}
 #wHlh(@w,@h){ height:@h; width:@w; line-height:@h; }
 #wHlh(@w,@h,@lh){ height:@h; width:@w; line-height:@lh; }
+#wHlh(@v){ #wHlh(@v,@v); }
 #hLh(@h,@lh){ height:@h; #lh(@lh); }
 #hW(@v){ #hW(@v,@v); }
 #wH(@v){ #wH(@v,@v); }
@@ -74,6 +75,7 @@
 #ptB(@v){ #ptB(@v, @v); }
 #ptL(@vl){ #ptL(@v, @v); }
 #p-aTl(@t, @l){ #p-a; #tL(@t, @l); }
+#p-aTlWh(@t,@l,@w,@h){ #p-aTl(@t, @l); #wH(@w,@h); };
 #p-aTr(@t, @r){ #p-a; #tR(@t, @r); }       
 #p-aBl(@b, @l){ #p-a; #bL(@b, @l); }
 #p-aBr(@b, @r){ #p-a; #bR(@b, @r); }
@@ -103,6 +105,7 @@
 #p-rT(@t){#p-r; top:@t; }
 #p-rB(@b){#p-r; bottom:@b; }
 #p-rR(@r){#p-r; right:@r; }
+#bcC(@bc,@c){ background-color: @bc; color: @c; };
 
 //多属性带参数
 #hLhW(@h,@lh,@w){ height:@h; #lh(@lh); width:@w; }
