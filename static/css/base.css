@@ -770,6 +770,10 @@ textarea.m-code {
   margin-left: 10%;
   margin-right: 10%;
 }
+.p-blos body {
+  margin-left: 0;
+  margin-right: 0;
+}
 .p-blos .blog-box {
   min-height: 500px;
   overflow-y: hidden;
