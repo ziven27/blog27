@@ -764,6 +764,9 @@ textarea.m-code {
 .search_form .s_int:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+.blog_list {
+  background-color: #374455;
+}
 .blog_list ol {
   background-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -796,6 +799,7 @@ textarea.m-code {
 /*page-artical*/
 .p-blo-hd {
   background-color: #374455;
+  text-align: center;
 }
 .p-blo-hd,
 .p-blo-hd body {
@@ -804,19 +808,22 @@ textarea.m-code {
 .p-blo-hd body {
   margin: 0;
 }
-.p-blo-hd h1 {
-  margin: 0;
-  text-align: center;
+.p-blo-hd a {
+  display: block;
+  color: #fff;
   height: 60px;
   width: 60px;
   line-height: 60px;
-  background-color: #273445;
-  color: #ffffff;
-  animation: index-h1 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.p-blo-hd h1 {
+  margin: 0;
 }
 .p-blo-hd h1 a {
-  display: block;
-  color: #fff;
+  background-color: #273445;
+  animation: index-h1 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.p-blo-hd h1 a:hover {
+  background-color: none;
 }
 .nav-mn {
   text-align: center;
@@ -832,18 +839,37 @@ textarea.m-code {
   line-height: 60px;
   color: #fff;
 }
-.p-blos,
-.p-blo {
-  padding-top: 60px;
-}
-.p-blos .blog-hd,
-.p-blo .blog-hd {
+.blog-hd {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   height: 60px;
+  overflow: hidden;
+}
+.blog-hd iframe {
+  height: 100%;
   width: 100%;
   overflow: hidden;
+}
+.blog-hd a {
+  background-color: #273445;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  animation: index-h1 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.blog-hd a:hover {
+  background-color: none;
+}
+.p-blos,
+.p-blo {
+  padding-top: 60px;
 }
 .p-blos {
   background-color: #374455;
