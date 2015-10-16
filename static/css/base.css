@@ -681,6 +681,10 @@ ol.reset {
 }
 a {
   text-decoration: none;
+  color: #374455;
+}
+a:hover {
+  color: #273445;
 }
 /*module*/
 .m-wrap {
@@ -792,6 +796,10 @@ textarea.m-code {
 .p-blo-hd {
   background-color: #374455;
 }
+.p-blo-hd,
+.p-blo-hd body {
+  overflow: hidden;
+}
 .p-blo-hd body {
   margin: 0;
 }
@@ -803,6 +811,7 @@ textarea.m-code {
   line-height: 60px;
   background-color: #273445;
   color: #ffffff;
+  animation: index-h1 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 .p-blo-hd h1 a {
   display: block;

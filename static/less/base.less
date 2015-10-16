@@ -15,7 +15,9 @@ body, input, button { margin: 0; }
 input { -webkit-appearance: none; }
 html, input, button { font-family: "Microsoft Yahei", "Open Sans", "Helvetica Neue", Helvetica, Arial, STHeiti, sans-serif; }
 ul.reset, ol.reset { list-style: none; margin: 0; padding: 0; }
-a { text-decoration: none; }
+a { text-decoration: none; color: #374455;
+	&:hover{ color: #273445; }
+}
 
 /*module*/
 .m-wrap { max-width: 1400px; width: 90%; #mlR(auto); position: relative; }
@@ -47,8 +49,9 @@ textarea.m-code { width: 100%; resize: vertical; }
 
 /*page-artical*/
 .p-blo-hd { background-color: #374455;
+	&, body{ overflow: hidden; } 
 	body { margin: 0; }
-	h1 { margin: 0; text-align: center; #wHlh(60px); #bcC(#273445, #fff);
+	h1 { margin: 0; text-align: center; #wHlh(60px); #bcC(#273445, #fff); animation: index-h1 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 		a { display: block; color: #fff; }
 	}
 }
