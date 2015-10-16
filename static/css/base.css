@@ -745,6 +745,7 @@ textarea.m-code {
 .search_form .s_int {
   animation: index-form 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   font-size: 1em;
+  height: 2.5em;
   width: 100%;
   line-height: 2.5em;
   position: relative;
