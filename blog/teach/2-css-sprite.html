@@ -7,6 +7,7 @@
 		<base target="_blank" />
 		<title>【27教你做网页-第一步】CSS Reset</title>
 		<link rel="stylesheet" href="../../static/css/base.css">
+		<link rel="stylesheet" href="2-css-sprite/i.css">
 	</head>
 	<body>
 		<div class="blog-hd">
@@ -50,7 +51,7 @@
 	</blockquote>
 	<p>这个解决方案已经是几年前看技术男神张鑫旭的文章提到过，不过男神也只是一笔带过，几年也没有再更新类似的文章。所以也只能自己摸索了。</p>
 	<h2>准备图片</h2>	
-	<img src="ps.jpg" width="306" height="307" alt="ps网格">
+	<img src="2-css-sprite/ps.jpg" width="306" height="307" alt="ps网格">
 	<p>先是将一个像素为256*256px的photoshop白板分成了16*16个像素为14*14px的格子（中间蓝色分割线为两个像素）。图标来自bootstrap2的<a href="http://glyphicons.com" target="_blank">Glyphicons</a>。之前有看过文章介绍图片是8*8像素渲染的，采用这种方式会对图片加载和压缩最友好。之所以没有让图标填充满16*16px的格子，是因为图片精灵之间需要有至少1像素的间隙来解决浏览器兼容性问题。</p>
 	<h2>源码</h2>
 	<pre class="m-code">/*css 代码*/
@@ -248,7 +249,7 @@ i, .i{
 		<i class="i-1 i10-16"></i>
 	</p>
 	<p>这里都是相同大小的图片，对于大小并不统一的图片我们同样可以使用这个方案。以下为淘宝首页找到一张sprite图片为例。</p>	
-	<img src="tb-grid.jpg" width="282" height="282" alt="">
+	<img src="2-css-sprite/tb-grid.jpg" width="282" height="282" alt="">
 	<h3>淘宝的方式（采用css gaga可以自动生成相同的代码）</h3>
 	<pre class="m-code">/* css 代码*/	
 .tbindex-images { vertical-align: middle; display: -moz-inline-stack; }
@@ -334,6 +335,7 @@ i, .i{
 	<p>图片命名规则: <code class="m-code">.i[群组名]-[图片id]</code> </p>
 	<p>这种方式的优点在于，一个类就是一个图标。彼此没有依赖，也解决了传统裹脚布类型命名方式。不过采用数字进行命名，也着实给人不友好的感觉（容易被同事吐槽）。想要知道哪个类对应哪个文件需要到文件夹里面进行查看。</p>
 	<p>图片高宽，和定位可以直接用css gaga 工具生成，也可以省掉这些琐碎的工作。不过这个工具有平台限制，目前好像只有windows版。</p>
+	<a href="2-css-sprite-demo.html" target="_blank" title="示例代码">示例代码</a>
 	</body>
 </html>
 
