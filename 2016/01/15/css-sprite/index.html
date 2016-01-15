@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>【27教你做网页-第二步】CSS Sprite | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="我们先来看一下，bootstrap对于图片精灵的解决方案。/css 源码/    [class^=”icon-“],[class=” icon-“] {        display: inline-block;        width: 14px;        height: 14px;        margin-top: 1px;
+        margin-right: .3em;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【27教你做网页-第二步】CSS Sprite">
+<meta property="og:url" content="http://yoursite.com/2016/01/15/css-sprite/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="我们先来看一下，bootstrap对于图片精灵的解决方案。/css 源码/    [class^=”icon-“],[class=” icon-“] {        display: inline-block;        width: 14px;        height: 14px;        margin-top: 1px;
+        margin-right: .3em;">
+<meta property="og:image" content="http://yoursite.com/ps.jpg">
+<meta property="og:image" content="http://yoursite.com/tb-grid.jpg">
+<meta property="og:updated_time" content="2016-01-15T09:54:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【27教你做网页-第二步】CSS Sprite">
+<meta name="twitter:description" content="我们先来看一下，bootstrap对于图片精灵的解决方案。/css 源码/    [class^=”icon-“],[class=” icon-“] {        display: inline-block;        width: 14px;        height: 14px;        margin-top: 1px;
+        margin-right: .3em;">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Ziven27</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>標籤</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>關於</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/27教你做网页/" style="font-size: 20px;">27教你做网页</a> <a href="/tags/font-字体/" style="font-size: 10px;">font 字体</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Ziven27</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="null" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Ziven27</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-css-sprite" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/15/css-sprite/" class="article-date">
+  	<time datetime="2016-01-15T09:38:25.000Z" itemprop="datePublished">2016-01-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      【27教你做网页-第二步】CSS Sprite
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/27教你做网页/">27教你做网页</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我们先来看一下，bootstrap对于图片精灵的解决方案。</p><br><pre class="m-code">/<em>css 源码</em>/<br>    [class^=”icon-“],[class<em>=” icon-“] {<br>        display: inline-block;<br>        width: 14px;<br>        height: 14px;<br>        margin-top: 1px;
+        </em>margin-right: .3em;<br>        line-height: 14px;<br>        vertical-align: text-top;<br>        background-image: url(“../img/glyphicons-halflings.png”);<br>        background-position: 14px 14px;<br>        background-repeat: no-repeat<br>    }<br>    .icon-glass { background-position: 0 0; }<br>    .icon-music { background-position: -24px 0; }<br>    .icon-search { background-position: -48px 0; }<br>    <strong><em><br>    /</em>html 源码<em>/<br>    &lt;i class=”icon-glass”&gt;&lt;/i&gt;<br>    &lt;i class=”icon-music”&gt;&lt;/i&gt;<br>    &lt;i class=”icon-search”&gt;&lt;/i&gt;<br></em></strong></pre><br><p>这套方案的问题</p><br><blockquote><br>    <ol><br>        <li>思考图片的命名杀死n多脑细胞。</li><br>        <li>命名较长，占用字节数，也就是CSS文件大小</li><br>        <li>也是最重要的，后期的维护。设想下，如果日后相册的图标不再被使用了，原来相册图标的位置可以被其他小图标（如RSS小图标）替换吗？理论上可以，实际上，我们除了必要的html替换，还需要重新修改图标样式的命名，即iAlbum→iRss的命名，而往往取而代之的做法是直接在后面添加新的图标</li><br>    </ol><br>    <p>这种命名的好处是不用关心到底哪个位置是那个图标，不用担心命名冲突，在小图标位置以及内容更换的情况下也无需重命名。</p><br>    –摘自：张鑫旭<a href="http://www.zhangxinxu.com/wordpress/?p=944" target="_blank" title="我是如何对网站CSS进行架构的">我是如何对网站CSS进行架构的</a><br></blockquote><br><p>这个解决方案已经是几年前看技术男神张鑫旭的文章提到过，不过男神也只是一笔带过，几年也没有再更新类似的文章。所以也只能自己摸索了。</p><br><h2>准备图片</h2><br><img src="ps.jpg" width="306" height="307" alt="ps网格"><br><p>先是将一个像素为256256px的photoshop白板分成了16<em>16个像素为14</em>14px的格子（中间蓝色分割线为两个像素）。图标来自bootstrap2的<a href="http://glyphicons.com" target="_blank">Glyphicons</a>。之前有看过文章介绍图片是8<em>8像素渲染的，采用这种方式会对图片加载和压缩最友好。之所以没有让图标填充满16</em>16px的格子，是因为图片精灵之间需要有至少1像素的间隙来解决浏览器兼容性问题。</p><br><h2>源码</h2><br><pre class="m-code">/<em>css 代码</em>/<br>    i, .i{<br>    display: inline-block;<br>    background-repeat: no-repeat;<br>    vertical-align: middle;<br>    }<br>    .i-1{<br>    height: 14px;<br>    width: 14px;<br>    background-image: url(‘i-1.png’);<br>    }<br>    /<em>第一行</em>/<br>    .i1-1{ background-position: 0 0; }<br>    .i1-2{ background-position: -16px 0; }<br>    .i1-3{ background-position: -32px 0; }<br>    *<br>    /<em>第二行</em>/<br>    .i2-1{ background-position: 0 -16px; }<br>    .i2-2{ background-position: -16px -16px; }<br>    .i2-3{ background-position: -32px -16px; }<br>    <strong><em><br>    /</em>html 代码<em>/<br>    &lt;i class=”i-1 i1-1”&gt;&lt;/i&gt;<br>    &lt;i class=”i-1 i1-2”&gt;&lt;/i&gt;<br>    &lt;i class=”i-1 i1-3”&gt;&lt;/i&gt;
+</em></strong></pre><br><p>定位命名方式：<code class="m-code">.i[行号]-[列号]</code>。这个是根据图片网格来定位的。</p><br><p>指定图片的命名方式：<code class="m-code">.i-[图片文件名]</code>。</p><br><blockquote>&lt;i&gt; 标签定义与文本中其余部分不同的部分，并把这部分文本呈现为斜体文本。在没有其他元素可以使用时，比如 &lt;b&gt;, &lt;cite&gt;, &lt;dfn&gt;, &lt;em&gt;, &lt;q&gt;, &lt;small&gt;, &lt;strong&gt;，请使用 &lt;i&gt; 标签。–摘自：w3cSchool <a href="http://www.w3school.com.cn/html5/html5_i.asp" title="html5 i标签" target="_blank">html5 i标签</a></blockquote><br><p>而且i也是icon的首字母,所以我建议采用i标签来作为css图片精灵的标签。为了少写一个为i的的class名，直接将样式挂载到了i标签上。为了其他标签采用相同样式，所以也创建了一个同名class。因为图片的位置是固定的，所以这段类似于坐标的定位代码是可以被无数遵从这个解决方案的图片复用。</p><br><h2>效果展示</h2><br><p>这里都是相同大小的图片，对于大小并不统一的图片我们同样可以使用这个方案。以下为淘宝首页找到一张sprite图片为例。</p><br><img src="tb-grid.jpg" width="282" height="282" alt=""><br><h3>淘宝的方式（采用css gaga可以自动生成相同的代码）</h3><br><pre class="m-code">/<em> css 代码</em>/<br>    .tbindex-images { vertical-align: middle; display: -moz-inline-stack; }<br>    .tbindex-images-market, .tbindex-images-shopping, .tbindex-images-sale, <strong><em>{ background-image: url(tb/tb.png); }<br>    .tbindex-images-market { background-position: 0 0; width: 146px; height: 58px }<br>    .tbindex-images-shopping { background-position: 0 -58px; width: 94px; height: 20px }<br>    .tbindex-images-sale { background-position: 0 -78px; width: 91px; height: 20px }
+    </em></strong><br>    /<em> html 代码</em>/<br>    &lt;s class=”tbindex-images tbindex-images-market”&gt;&lt;/s&gt;<br>    &lt;s class=”tbindex-images tbindex-images-shopping”&gt;&lt;/s&gt;<br>    &lt;s class=”tbindex-images tbindex-images-sale”&gt;&lt;/s&gt;<br></pre><br><h3>采用坐标的方式一</h3><br><pre class="m-code">/<em> css 代码</em>/<br>    <strong><em><br>    /</em>之前写好的坐标库<em>/<br>    .i-tb-27 { background-image: url(tb/tb-27.png); }<br>    .i-tb-27.i12-1 { width: 60px; height: 60px; }<br>    .i-tb-27.i1-1 { width: 142px; height: 58px; }<br>    .i-tb-27.i12-5 { width: 35px; height: 34px; }
+    </em></strong><br>    /<em> html 代码</em>/<br>    &lt;i class=”i-tb-27 i12-1”&gt;&lt;/i&gt;<br>    &lt;i class=”i-tb-27 i1-1”&gt;&lt;/i&gt;<br>    &lt;i class=”i-tb-27 i12-5”&gt;&lt;/i&gt;<br></pre><br><h3>坐标的方式二</h3><br><pre class="m-code">/<em> css 代码</em>/<br>    <strong><em><br>    /</em>之前写好的坐标库<em>/<br>    .i-tb-1, .i-tb-2, .i-tb-3, </em></strong> { background-image: url(tb/tb-27.png); }<br>    .i-tb-1 { width: 60px; height: 60px; }<br>    .i-tb-2 { width: 142px; height: 58px; }<br>    .i-tb-3 { width: 35px; height: 34px; }<br>    <strong><em><br>    /</em> html 代码<em>/<br>    &lt;i class=”i-tb-1 i12-1”&gt;&lt;/i&gt;<br>    &lt;i class=”i-tb-2 i1-1”&gt;&lt;/i&gt;<br>    &lt;i class=”i-tb-3 i12-5”&gt;&lt;/i&gt;<br></em></strong></pre><br><p><strong>注：</strong>淘宝代码虽然看起来这么多，但肯定是有什么自动化工具生成的了。比如我知道的<a href="http://www.99css.com/cssgaga/" target="_blank" title="CSS Gaga">CSS Gaga</a>可以做到。这里只是纯从命名方式来探讨图片精灵的问题。</p><br><p>采用极坐标的方式，书写的代码量是明显比较小的。因为完全省掉了图片定位的代码。而且如果图片大小是统一的话，也可以直接省去编写高宽代码。</p><br><p>两种坐标的方式的特点：</p><br><ol><br>    <li>只需将图片路径设定到一个样式（i-tb-27）上即可，在页面上统一设定这些图标的样式的时候，也只需要统一给这个类设定即可。不过ie6并不支持群组选择器。</li><br>    <li>需要给每个类添加图片的路径，其他的样式也需要给这些类设定。也正因为样式之间相互独立，没有依赖关系。且没有兼容性问题。</li><br></ol><br><p>这两种在不同的场景各有的自己的优势，所以这个也是让我始终不使用这种方式的原因。一套框架里面采用两种不同的方式解决一种问题，总是会增加学习的成本。</p><br><p>不知道是我学艺不精，还是没有领悟到男神的精髓，看到这里不经会发现，这种方式不仅需要设计师的配合，在应用上也给人感觉难以理解。希望能人能帮我解答啊。</p><br><hr><br><h2>我的其它方案</h2><br><h3>结合坐标的命名方式，采用css gaga自动生成的代码一</h3><br><pre class="m-code">/ css 代码<em>/<br>    .ig1-1, .ig1-2, .ig1-3, </em>  { background-image: url(tb/tb-gaga.png); }<br>    .ig1-1 { width: 142px; height: 58px; background-position: -62px -0px; }<br>    .ig1-2 { width: 82px; height: 33px; background-position: -243px -0px; }<br>    .ig1-3 { width: 139px; height: 20px; background-position: -327px -0px; }<br>    <strong><em><br>    /</em> html 代码<em>/<br>    &lt;i class=”ig1-1”&gt;&lt;/i&gt;<br>    &lt;i class=”ig1-2”&gt;&lt;/i&gt;<br>    &lt;i class=”ig1-3”&gt;&lt;/i&gt;<br></em></strong></pre><br><h3>结合坐标的命名方式，采用css gaga自动生成的代码二</h3><br><pre class="m-code">/ css 代码<em>/<br>    .ig-1  { background-image: url(tb/tb-gaga.png); }<br>    .ig1-1 { width: 142px; height: 58px; background-position: -62px -0px; }<br>    .ig1-2 { width: 82px; height: 33px; background-position: -243px -0px; }<br>    .ig1-3 { width: 139px; height: 20px; background-position: -327px -0px; }
+    </em><br>    /<em> html 代码</em>/<br>    &lt;i class=”ig-1 ig1-1”&gt;&lt;/i&gt;<br>    &lt;i class=”ig-1 ig1-2”&gt;&lt;/i&gt;<br>    &lt;i class=”ig-1 ig1-3”&gt;&lt;/i&gt;<br></pre><br><p>图片群组命名规则: <code class="m-code">.i-[群组名]</code></p><br><p>图片命名规则: <code class="m-code">.i[群组名]-[图片id]</code> </p><br><p>这种方式的优点在于，一个类就是一个图标。彼此没有依赖，也解决了传统裹脚布类型命名方式。不过采用数字进行命名，也着实给人不友好的感觉（容易被同事吐槽）。想要知道哪个类对应哪个文件需要到文件夹里面进行查看。</p><br><p>图片高宽，和定位可以直接用css gaga 工具生成，也可以省掉这些琐碎的工作。不过这个工具有平台限制，目前好像只有windows版。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/01/15/font-face/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          font-face
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/01/15/css-reset/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">【27教你做网页-第一步】CSS Reset</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="css-sprite" data-title="【27教你做网页-第二步】CSS Sprite" data-url="http://yoursite.com/2016/01/15/css-sprite/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Ziven27
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
