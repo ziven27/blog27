@@ -1,0 +1,89 @@
+i { display: inline-block; background-repeat: no-repeat; vertical-align: middle; }
+
+/*淘宝代码*/
+.tbindex-images-logo, .tbindex-images-chaodianjie, .tbindex-images-fxhh, .tbindex-images-fxhd, .tbindex-images-zgzz, .tbindex-images-paimai, .tbindex-images-mini-logo, .tbindex-images-jiyoujia, .tbindex-images-zhongchou, .tbindex-images-aiguangjie, .tbindex-images-user-head, .tbindex-images-toutiao, .tbindex-images-huichi, .tbindex-images-apass, .tbindex-images-hot, .tbindex-images-tmall-logo, .tbindex-images-shopping, .tbindex-images-sale, .tbindex-images-market { background-image: url(tb/tb.png); }
+.tbindex-images-logo { background-position: 0 0; width: 146px; height: 58px }
+.tbindex-images-chaodianjie { background-position: 0 -58px; width: 94px; height: 20px }
+.tbindex-images-fxhh { background-position: 0 -78px; width: 91px; height: 20px }
+.tbindex-images-fxhd { background-position: 0 -98px; width: 91px; height: 20px }
+.tbindex-images-zgzz { background-position: 0 -118px; width: 83px; height: 15px }
+.tbindex-images-paimai { background-position: -146px 0; width: 83px; height: 15px }
+.tbindex-images-mini-logo { background-position: -146px -15px; width: 80px; height: 33px }
+.tbindex-images-jiyoujia { background-position: -146px -48px; width: 80px; height: 20px }
+.tbindex-images-zhongchou { background-position: -146px -68px; width: 78px; height: 15px }
+.tbindex-images-aiguangjie { background-position: -146px -83px; width: 62px; height: 20px }
+.tbindex-images-user-head { background-position: 0 -133px; width: 60px; height: 60px }
+.tbindex-images-toutiao { background-position: -146px -103px; width: 55px; height: 16px }
+.tbindex-images-huichi { background-position: -91px -78px; width: 54px; height: 20px }
+.tbindex-images-apass { background-position: -94px -58px; width: 44px; height: 15px }
+.tbindex-images-hot { background-position: -60px -133px; width: 33px; height: 33px }
+.tbindex-images-tmall-logo { background-position: -146px -119px; width: 32px; height: 11px }
+.tbindex-images-shopping { background-position: -208px -83px; width: 20px; height: 16px }
+.tbindex-images-sale { background-position: -91px -98px; width: 19px; height: 20px }
+.tbindex-images-market { background-position: -110px -98px; width: 20px; height: 20px }
+
+/*极坐标的方式一*/
+.i-tb-27 { background-image: url(tb/tb-27.png); }
+.i-tb-27.i12-1 { width: 60px; height: 60px; }
+.i-tb-27.i1-1 { width: 142px; height: 58px; }
+.i-tb-27.i12-5 { width: 35px; height: 34px; }
+.i-tb-27.i1-11 { width: 82px; height: 33px; }
+.i-tb-27.i9-1 { width: 90px; height: 20px; }
+.i-tb-27.i5-1 { width: 139px; height: 20px; }
+.i-tb-27.i5-11 { width: 81px; height: 20px; }
+.i-tb-27.i7-1 { width: 91px; height: 20px; }
+.i-tb-27.i7-7 { width: 54px; height: 20px; }
+.i-tb-27.i8-11 { width: 62px; height: 20px; }
+.i-tb-27.i11-11 { width: 64px; height: 17px; }
+.i-tb-27.i4-11 { width: 76px; height: 15px; }
+.i-tb-27.i7-11 { width: 78px; height: 15px; }
+.i-tb-27.i11-1 { width: 83px; height: 14px; }
+.i-tb-27.i10-11 { width: 34px; height: 12px; }
+.i-tb-27.i9-8 { width: 21px; height: 20px; }
+.i-tb-27.i11-8 { width: 22px; height: 19px; }
+.i-tb-27.i13-8 { width: 22px; height: 20px; }
+
+/*极坐标的方式二*/
+.i-tb-1, .i-tb-2, .i-tb-3, .i-tb-4, .i-tb-5, .i-tb-6, .i-tb-7, .i-tb-8, .i-tb-9, .i-tb-10, .i-tb-11, .i-tb-12, .i-tb-13, .i-tb-14, .i-tb-15, .i-tb-16, .i-tb-17, .i-tb-18 { background-image: url(tb/tb-27.png); }
+.i-tb-1 { width: 60px; height: 60px; }
+.i-tb-2 { width: 142px; height: 58px; }
+.i-tb-3 { width: 35px; height: 34px; }
+.i-tb-4 { width: 82px; height: 33px; }
+.i-tb-5 { width: 90px; height: 20px; }
+.i-tb-6 { width: 139px; height: 20px; }
+.i-tb-7 { width: 81px; height: 20px; }
+.i-tb-8 { width: 91px; height: 20px; }
+.i-tb-9 { width: 54px; height: 20px; }
+.i-tb-10 { width: 62px; height: 20px; }
+.i-tb-11 { width: 64px; height: 17px; }
+.i-tb-12 { width: 76px; height: 15px; }
+.i-tb-13 { width: 78px; height: 15px; }
+.i-tb-14 { width: 83px; height: 14px; }
+.i-tb-15 { width: 34px; height: 12px; }
+.i-tb-16 { width: 21px; height: 20px; }
+.i-tb-17 { width: 22px; height: 19px; }
+.i-tb-18 { width: 22px; height: 20px; }
+
+/*结合坐标的命名方式，采用css gaga自动生成的代码一*/
+.ig1-1, .ig1-2, .ig1-3, .ig1-4, .ig1-5, .ig1-6, .ig1-7, .ig1-8, .ig1-9, .ig1-10, .ig1-11, .ig1-12, .ig1-13, .ig1-14, .ig1-15, .ig1-16, .ig1-17, .ig1-18 { background-image: url(tb/tb-gaga.png); }
+
+/*结合坐标的命名方式，采用css gaga自动生成的代码二*/
+.ig-1 { background-image: url(tb/tb-gaga.png); }
+.ig1-16 { width: 60px; height: 60px; background-position: -0px -0px; }
+.ig1-1 { width: 142px; height: 58px; background-position: -62px -0px; }
+.ig1-17 { width: 35px; height: 34px; background-position: -206px -0px; }
+.ig1-2 { width: 82px; height: 33px; background-position: -243px -0px; }
+.ig1-10 { width: 90px; height: 20px; background-position: -206px -36px; }
+.ig1-3 { width: 139px; height: 20px; background-position: -327px -0px; }
+.ig1-4 { width: 81px; height: 20px; background-position: -353px -22px; }
+.ig1-6 { width: 90px; height: 20px; background-position: -436px -22px; }
+.ig1-7 { width: 54px; height: 20px; background-position: -468px -0px; }
+.ig1-9 { width: 62px; height: 20px; background-position: -524px -0px; }
+.ig1-15 { width: 64px; height: 17px; background-position: -583px -22px; }
+.ig1-5 { width: 76px; height: 15px; background-position: -353px -44px; }
+.ig1-8 { width: 78px; height: 15px; background-position: -431px -44px; }
+.ig1-13 { width: 102px; height: 14px; background-position: -511px -44px; }
+.ig1-12 { width: 34px; height: 12px; background-position: -588px -0px; }
+.ig1-11 { width: 21px; height: 20px; background-position: -649px -0px; }
+.ig1-14 { width: 22px; height: 19px; background-position: -649px -26px; }
+.ig1-18 { width: 22px; height: 20px; background-position: -675px -0px; }
