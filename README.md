@@ -8,4 +8,4 @@
 	2.可以通过url搜索 ‘?wd=%s’， ’%s‘为搜索内容
 
 ##预览图
-	![image](src/thumb.png)
+	![image](http://www.ziven27.com/src/thumb.png)
