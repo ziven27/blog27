@@ -13,7 +13,30 @@
 		<title>ziven27</title>
 		<link rel="shortcut icon" href="favicon.ico" />
 		<script>
-			!function(a,b,c){var e,f,g,h,i,j,k,d=a.search;if(d&&""!==d){if(e=d.indexOf("?"+c+"="),e=0>e?d.indexOf("&"+c+"="):e,0>e)return!1;for(f=e+3,g=f,h=!1,i=f,j=d.length;j>i&&"&"!==d[i];i++)g=i+1;h=d.substring(f,g),h&&""!=h&&(k=b+"?"+c+"="+h,a.href=k)}}(window.location,"http://www.baidu.com/s","wd");
+			(function (winLocation, url, searchName) {
+				var searchQuery = winLocation.search;
+				if (searchQuery && searchQuery !== '') {
+					var index = searchQuery.indexOf('?' + searchName + '=');
+					index = index < 0 ? searchQuery.indexOf('&' + searchName + '=') : index;
+					if (index < 0) {
+						return false;
+					}
+					var starIndex = index + 3;
+					var endIndex = starIndex;
+					var searchString = false;
+					for (var i = starIndex, len = searchQuery.length; i < len; i++) {
+						if (searchQuery[i] === '&') {
+							break;
+						}
+						endIndex = i + 1;
+					}
+					var searchString = searchQuery.substring(starIndex, endIndex);
+					if (searchString && searchString != '') {
+						var baiduSearchUrl = url + '?' + searchName + '=' + searchString;
+						winLocation.href = baiduSearchUrl;
+					}
+				}
+			})(window.location, "http://www.baidu.com/s", 'wd');
 		</script>
 		<style>
 			html{ background-color: #f4f4f4; }
