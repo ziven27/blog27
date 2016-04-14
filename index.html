@@ -12,6 +12,14 @@
 		<meta name="baidu-site-verification" content="mSgh5Wzaiu" />
 		<title>ziven27</title>
 		<link rel="shortcut icon" href="favicon.ico" />
+		<script>
+			(function (winLocation, url) {
+				var searchQuery = winLocation.search;
+				if (searchQuery && searchQuery !== '') {
+					winLocation.href = url + searchQuery;
+				}
+			})(window.location, "http://www.baidu.com/s");
+		</script>
 		<style>
 			html{ background-color: #f4f4f4; }
 			html, body { height: 100%; overflow: hidden; }
@@ -41,7 +49,7 @@
 		</style>
 	</head>
 	<body>
-		<form class="s_form" action="https://www.baidu.com/s" target="_blank">
+		<form class="s_form" target="_blank">
 			<fieldset class="s_fieldset">
 				<legend class="s_legend br50p">27</legend>
 				<input class="s_ipt trans" name="wd" placeholder="百度一下" autocomplete="off" required="required">
@@ -49,6 +57,7 @@
 				<button class="s_sub trans" type="submit">GO</button>
 			</fieldset>
 		</form>
+
 		<script>
 		var _hmt = _hmt || [];
 		(function() {
