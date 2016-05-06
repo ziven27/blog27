@@ -1,4 +1,4 @@
-html, button, input, select, textarea { font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background-color: #f4f4f4; }
+html, button, input, select, textarea { font: caption; }
 body { width: 98%; margin: 0 auto; max-width: 960px; }
 h1 { display: none; }
 a { color: #337ab7; text-decoration: none; }
