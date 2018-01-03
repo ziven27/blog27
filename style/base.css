@@ -1,6 +1,0 @@
-html { background-color: #fff; }
-html, input, button, select, textarea { font: caption; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -moz-font-feature-settings: "liga", "kern"; }
-.g_wrap { width: 96%; max-width: 1200px; _width: 1200px; margin-left: auto; margin-right: auto; }
-.cf:after, .cf:before { display: table; content: ""; }
-.cf:after { clear: both; overflow: hidden; }
-.cf { *zoom: 1; }
